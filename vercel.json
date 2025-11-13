@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "builds": [
+    { "src": "api/*.js", "use": "@vercel/node" }
+  ],
+  "routes": [
+    { "src": "/api/us-order-webhook", "dest": "api/us-order-webhook.js" },
+    { "src": "/api/us-inventory-sync", "dest": "api/us-inventory-sync.js" }
+  ]
+}
